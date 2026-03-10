@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portfolio/css/base.css' %}">
+    <script src="{% static 'diary/js/base.js' %}"></script>
+    <title>Shohei Lab</title>
+  </head>
+
+  <body>
+
+    <header id="header">
+      <div class="header-inner wrapper">
+        <h1 class="logo">
+          <a href="Portfolio.html"><img src="C:\Users\taihe\OneDrive\Desktop\Portfolio\Image\SK logo.jpg"
+              alt="Shohei Logo"></a>
+        </h1>
+        <nav id="navbar" class="nav">
+          <ul class="nav-link">
+            <li><a href="#top">Top</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <img src="Image\moon.png" id="icon" />
+      </div>
+    </header>
+
+
+    <main>
+      <section id="mainvisual">
+        <div class="star-container">
+          <h1>Shohei's Webpage</h1>
+          <a href="#top" class="scroll-icon">
+          <span class="material-icons md-18">arrow_circle_down</span>
+        </a> 
+        </div>
+      </section>
+
+      <section id="top" class="wrapper">
+        <h1>Welcome to my portfolio. I am Shohei.</h1>
+        <div class="content">
+          <img src="C:\Users\taihe\OneDrive\Pictures\0R4A8575.jpg" alt="Shohei Kotera">
+          <div class="text">
+            <h3 class="content-title">SHOHEI KOTERA</h3>
+            <p>
+              Master of computer science graduate (University of Wollongong)<br>
+              From Japan<br>
+              Passionate about coding; Java, Python, JavaScript, React.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="wrapper">
+        <h2 class="section-title">About this website</h2>
+        <div class="content">
+          This website shows my skills, work and profile. I hope that you will get familiar with me through this website.
+        </div>
+      </section>
+
+      <section id="projects" class="wrapper">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project project-tile">
+            <img class="project-img" src="C:\Users\taihe\OneDrive\Desktop\Portfolio\Image\JavaScriptCalculator.png"
+              alt="Calculator">
+            <p class="project-title">
+              <a href="JSCalculator.html" class="project-link">
+                <span class="code">&lt;</span> Calculator <span class="code">&#47;&gt;</span>
+              </a>
+            </p>
+          </div>
+
+          <div class="project project-tile">
+            <img class="project-img" src="C:\Users\taihe\OneDrive\Desktop\Portfolio\Image\under construction.png"
+              alt="Under construction">
+            <p class="project-title">
+              <a href="" class="project-link">
+                <span class="code">&lt;</span> Under constrcution <span class="code">&#47;&gt;</span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <a href="" class="btn btn-show-all" target="_blank">
+          Show all
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </section>
+
+      <section id="profile" class="wrapper">
+        <h2 class="section-title">My profile</h2>
+        <p class="profile-intro">This is my history.</p>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">1990</div>
+              <div class="timeline-content">I was born in Hyogo, Japan.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2009</div>
+              <div class="timeline-content">I graduated from high school in Osaka, Japan.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2013</div>
+              <div class="timeline-content">I graduated from Doshisha University with a Bachelor of Law in Kyoto, Japan. </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2015</div>
+              <div class="timeline-content">I graduated from Ritsumeikan University with  a Juris Doctor in Kyoto, Japan. </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2019</div>
+              <div class="timeline-content">I moved to Australia on a working holiday because I wanted to tackle new challenges. Until 2024, I worked across Australia, such as in Western Australia, Tasmania, Queensland, Victoria and New South Wales.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2024</div>
+              <div class="timeline-content">I enrolled in a Master of Computer Science at the University of Wollongong, Australia, to become a software engineer. Despite studying law at a university in Japan, my decision to pursue computer science at an Australian university stems from the realization that, as a software engineer, I can have a more profound impact on the Japanese judicial system than by engaging in legal practice. </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2025</div>
+              <div class="timeline-content">I have graduated from the University of Wollongong with a Master of Computer Science, specialising in software engineering, with distinction.</div>
+            </div>
+          </div>
+      </section>
+
+      <section id="contact" class="wrapper">
+        <h2 class="section-title">Contact</h2>
+        <h3>I am looking forward to your contact!</h3>
+
+        <div class="contact-links">
+          <a id="profile-link" href="https://github.com/ShoheiK12" target="_blank" class="contact-details">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a id="profile-link" href="https://www.linkedin.com/in/shohei-kotera-19542b2b6" target="_blank"
+            class="contact-details">
+            <i class="fa-brands fa-linkedin"></i> Linkedin
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer id="footer">
+      <p>&copy; 2025 Shohei Kotera</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./Portfolio.js"></script>
+
+
+  </body>
+
+</html>
