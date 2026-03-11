@@ -10,7 +10,6 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     {% load static %}
     <link rel="stylesheet" href="{% static 'portfolio/css/base.css' %}">
-    <script src="{% static 'diary/js/base.js' %}"></script>
     <title>Shohei Lab</title>
   </head>
 
@@ -19,7 +18,7 @@
     <header id="header">
       <div class="header-inner wrapper">
         <h1 class="logo">
-          <a href="Portfolio.html"><img src="C:\Users\taihe\OneDrive\Desktop\Portfolio\Image\SK logo.jpg"
+          <a href="index.html"><img src="C:\Users\taihe\OneDrive\Desktop\Portfolio\Image\SK logo.jpg"
               alt="Shohei Logo"></a>
         </h1>
         <nav id="navbar" class="nav">
@@ -157,7 +156,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./Portfolio.js"></script>
 
-
+  <script src="{% static 'portfolio/js/base.js' %}"></script>
   </body>
 
 </html>
