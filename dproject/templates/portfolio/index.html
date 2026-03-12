@@ -18,7 +18,7 @@
     <header id="header">
       <div class="header-inner wrapper">
         <h1 class="logo">
-          <a href="index.html"><img src="C:\Users\taihe\OneDrive\Desktop\Portfolio\Image\SK logo.jpg"
+          <a href="{% url 'portfolio:index' %}"><img src="{% static 'portfolio/images/SK logo.jpg' %}"
               alt="Shohei Logo"></a>
         </h1>
         <nav id="navbar" class="nav">
@@ -31,7 +31,10 @@
           </ul>
         </nav>
         
-        <img src="Image\moon.png" id="icon" />
+        <img id="icon"
+             src="{% static 'portfolio/images/moon.png' %}"
+             data-sun="{% static 'portfolio/images/sun.png' %}"
+             data-moon="{% static 'portfolio/images/moon.png' %}">
       </div>
     </header>
 
@@ -49,7 +52,7 @@
       <section id="top" class="wrapper">
         <h1>Welcome to my portfolio. I am Shohei.</h1>
         <div class="content">
-          <img src="C:\Users\taihe\OneDrive\Pictures\0R4A8575.jpg" alt="Shohei Kotera">
+          <img src="{% static 'portfolio/images/0R4A8575.jpg' %}" alt="Shohei Kotera">
           <div class="text">
             <h3 class="content-title">SHOHEI KOTERA</h3>
             <p>
@@ -72,7 +75,7 @@
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
           <div class="project project-tile">
-            <img class="project-img" src="C:\Users\taihe\OneDrive\Desktop\Portfolio\Image\JavaScriptCalculator.png"
+            <img class="project-img" src="{% static 'portfolio/images/JavaScriptCalculator.png' %}"
               alt="Calculator">
             <p class="project-title">
               <a href="JSCalculator.html" class="project-link">
@@ -82,7 +85,7 @@
           </div>
 
           <div class="project project-tile">
-            <img class="project-img" src="C:\Users\taihe\OneDrive\Desktop\Portfolio\Image\under construction.png"
+            <img class="project-img" src="{% static 'portfolio/images/under construction.png' %}"
               alt="Under construction">
             <p class="project-title">
               <a href="" class="project-link">
@@ -154,9 +157,7 @@
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./Portfolio.js"></script>
-
-  <script src="{% static 'portfolio/js/base.js' %}"></script>
+    <script src="{% static 'portfolio/js/base.js' %}"></script>
   </body>
 
 </html>
