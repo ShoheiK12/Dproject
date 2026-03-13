@@ -7,4 +7,5 @@ app_name = "portfolio"
 urlpatterns = [
     # path(path, function, name)
     path("", views.index, name="index"),
+    path("calculator/", views.calculator, name="calculator"),
 ]

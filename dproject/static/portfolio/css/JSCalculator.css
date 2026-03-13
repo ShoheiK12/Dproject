@@ -1,0 +1,94 @@
+html {
+  background: #100a1c;
+  background-image:
+    radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+    radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+  background-attachment: fixed;
+  color: #6cacc5;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+}
+
+h1 {
+  display: block;       
+  text-align: center;   
+  margin-bottom: 20px;  
+}
+
+table {
+  background-color: #000;
+  width: 300px;
+  height: 400px;
+  /* Add a shadow to make the calculator appear to float. */
+  border: solid 1px #dcdcdca4;
+  border-right: solid 4px #dcdcdca4;
+  border-bottom: solid 4px #dcdcdca4;
+  border-radius: 10px;
+  text-align: center;
+  padding: 8px;
+  margin: 20px;
+}
+ 
+input {
+  color: #fff; 
+  width: 70px;
+  height: 70px;
+  font-size: x-large;
+  background-color: #dcdcdca4;
+  /* Setting for button */
+  border: none;
+  border-radius: 20px;
+  /* Remove the black border on click. */
+  outline: none;
+}
+    
+.display {
+  width: 250px;
+  text-align: right; 
+  background-color: #2596be;
+  border-top: solid #dcdcdca4 5px;
+  border-bottom: solid #dcdcdca4 5px;
+  border-right: solid #b6b6b6 6px;
+  border-left: solid #b6b6b6 6px;
+  border-radius: 5px;
+}
+/* Error message */
+.display.error {
+  color: red;
+}
+/* Override the background colour of the operator */
+.operator {
+  font-size: 40px;
+  background-color: orange;
+}
+/* Set the background colour for the section marked with = as an override. */
+.equal {
+  font-size: 40px;
+  background-color: #b6b6b6;
+}
+ 
+/* Darkening the colour when hovering over it */
+input:hover {
+  background: #747373b9;
+}
+.display:hover {
+  background: #b84c93;
+}
+.operator:hover {
+  background: #339cdd;
+}
+ 
+/* Darkens the colour when clicked */
+input:active {
+  background:  #5a5a5a;
+}
+.operator:active {
+  background: #2c80b4;
+}
