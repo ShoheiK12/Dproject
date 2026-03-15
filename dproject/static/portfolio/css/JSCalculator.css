@@ -42,7 +42,7 @@ input {
   height: 70px;
   font-size: x-large;
   background-color: #dcdcdca4;
-  /* Setting for button */
+  /* Setting for button. */
   border: none;
   border-radius: 20px;
   /* Remove the black border on click. */
@@ -59,11 +59,11 @@ input {
   border-left: solid #b6b6b6 6px;
   border-radius: 5px;
 }
-/* Error message */
+/* Error message. */
 .display.error {
   color: red;
 }
-/* Override the background colour of the operator */
+/* Override the background colour of the operator. */
 .operator {
   font-size: 40px;
   background-color: orange;

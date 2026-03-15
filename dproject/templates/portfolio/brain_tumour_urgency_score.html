@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>Brain Tumor Urgency Score</title>
+
+    <link rel="stylesheet" href="{% static 'portfolio/css/braintumour.css' %}">
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<h1>Brain Tumor Urgency Score</h1>
+
+<p>
+Upload a brain MRI segmentation file (.nii or .nii.gz).  
+The system will compute tumour volume, shape metrics, and an urgency score.
+</p>
+
+
+<form method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+    <div class="upload-box">
+
+        <p>Select MRI segmentation file</p>
+
+        <input type="file" name="mri_file" accept=".nii,.nii.gz" required>
+
+        <br>
+
+        <button type="submit">Run Analysis</button>
+
+    </div>
+
+</form>
+
+
+{% if urgency_level %}
+
+<div class="result">
+
+<h2>Analysis Result</h2>
+
+<p><strong>Whole Tumour Volume:</strong> {{ volume }} cm³</p>
+
+<p><strong>Shape Score:</strong> {{ shape_score }}</p>
+
+<p><strong>Urgency Score:</strong> {{ final_score }}</p>
+
+<p><strong>Urgency Level:</strong> {{ urgency_level }}</p>
+
+</div>
+
+{% endif %}
+
+
+</div>
+
+</body>
+</html>

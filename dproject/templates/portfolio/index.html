@@ -85,16 +85,16 @@
           </div>
 
           <div class="project project-tile">
-            <img class="project-img" src="{% static 'portfolio/images/under construction.png' %}"
-              alt="Under construction">
+            <img class="project-img" src="{% static 'portfolio/images/brain_tumour.jpg' %}"
+              alt="Brain Tumour Urgency">
             <p class="project-title">
-              <a href="" class="project-link">
-                <span class="code">&lt;</span> Under constrcution <span class="code">&#47;&gt;</span>
+              <a href="{% url 'portfolio:brain_urgency' %}" class="project-link">
+                <span class="code">&lt;</span> Brain Tumour Urgency Score System <span class="code">&#47;&gt;</span>
               </a>
             </p>
           </div>
         </div>
-        <a href="" class="btn btn-show-all" target="_blank">
+        <a href="{% url 'portfolio:projects' %}" class="btn btn-show-all" target="_blank">
           Show all
           <i class="fas fa-chevron-right"></i>
         </a>

@@ -1,0 +1,52 @@
+/* Brain Tumour Analysis Page */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f4f6f9;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    max-width:800px;
+    margin:60px auto;
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+p{
+    text-align:center;
+}
+
+.upload-box{
+    margin-top:30px;
+    text-align:center;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    font-size:16px;
+    background:#0077cc;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#005fa3;
+}
+
+.result{
+    margin-top:40px;
+    padding:20px;
+    border-top:2px solid #eee;
+}

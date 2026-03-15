@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>All Projects</title>
+    <link rel="stylesheet" href="{% static 'portfolio/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/braintumour.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<h1 style="text-align:center; margin-top: 20px;">All Projects</h1>
+
+<div class="projects-grid" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px;">
+
+  <!-- Project 1: JavaScript Calculator -->
+  <div class="project project-tile" style="width: 300px; text-align: center;">
+    <img class="project-img" src="{% static 'portfolio/images/JavaScriptCalculator.png' %}" alt="Calculator" style="width:100%;">
+    <p class="project-title">
+      <a href="{% url 'portfolio:calculator' %}" class="project-link">
+        <span class="code">&lt;</span> Calculator <span class="code">&#47;&gt;</span>
+      </a>
+    </p>
+  </div>
+
+  <!-- Project 2: Brain Tumour Urgency -->
+  <div class="project project-tile" style="width: 300px; text-align: center;">
+    <img class="project-img" src="{% static 'portfolio/images/brain_tumour.jpg' %}" alt="Brain Tumour Urgency" style="width:100%;">
+    <p class="project-title">
+      <a href="{% url 'portfolio:brain_urgency' %}" class="project-link">
+        <span class="code">&lt;</span> Brain Tumour Urgency Score System<span class="code">&#47;&gt;</span>
+      </a>
+    </p>
+  </div>
+
+  <!-- 他のプロジェクトも同様に追加可能 -->
+
+</div>
+
+</body>
+</html>
