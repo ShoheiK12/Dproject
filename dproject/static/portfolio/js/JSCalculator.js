@@ -19,12 +19,11 @@ function get_calc(btn) {
     }
 
   } else if (btn.value == "C") {
-    display.value = "";
-
-  } else if (btn.value == "AC") {          
     // Delete the last character.
     display.value = display.value.slice(0, -1);
 
+  } else if (btn.value == "AC") {          
+    display.value = "";
   } else if (btn.value == "%") {
     if (display.value !== "") {
       display.value = Number(display.value) / 100;
